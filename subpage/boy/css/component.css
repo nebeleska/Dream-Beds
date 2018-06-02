@@ -1,41 +1,44 @@
  header {
-     display: flex;
-     justify-content: flex-end;
+     text-align: center;
  }
 
  header li {
      position: relative;
      display: inline-block;
      margin: 10px;
-     padding: 5px 10px;
+     padding: 5px;
      letter-spacing: 2px;
      font-size: 15px;
  }
 
- header li a {
-     padding: 10px;
-     color: #0F464D;
+ @media (max-width: 567px) {
+     header li {
+         margin: 0;
+     }
  }
 
- a:hover {
+ header li a {
+     padding: 10px;
+     color: #0f464d;
+ }
+
+ header li a:hover {
      text-decoration: none;
      color: #5c86ab;
  }
 
-
- a:after {
+ header li:after {
      content: '';
      width: 0;
      height: 2px;
-     background-color: #0F464D;
+     background-color: #0f464d;
      position: absolute;
      bottom: -5px;
      left: 0;
      transition: 0.4s;
  }
 
- a:after:hover {
-
+ header li:hover:after {
      width: 100%;
  }
 
