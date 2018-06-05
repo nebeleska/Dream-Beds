@@ -1,1 +1,3 @@
-"use strict";
+$('.carousell').flickity({
+    wrapAroumd: true
+});
